@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orçamento</title>
+  <link rel="stylesheet" href="../css/orçamento.css">
+  <link rel="icon" type="image/png" href="../img/Logo_Reobote.png" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo-section">
+        <a href="index.html"><img src="../img/Logo_Reobote.png" alt="Reobote" class="logo-img"></a>
+      </div>
+      
+      <!-- Ícone de perfil -->
+      <div class="user-circle">
+        <a href="perfil.html">
+          <img src="../img/perfil.png" alt="Imagem de Perfil" class="profile-img">
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== CONTAINER ===== -->
+  <div class="orcamento-container">
+    <div class="orcamento-box">
+      <h2>ORÇAMENTO</h2>
+
+	  <form id="formOrcamento" enctype="multipart/form-data">
+	    <!-- Serviço -->
+	    <label for="servico">Serviço:</label>
+	    <select id="servico" name="servico">
+	      <option value="">Selecione</option>
+	      <option value="usinagem">Usinagem</option>
+	      <option value="retificacao">Retificação</option>
+	      <option value="revestimento">Revestimento</option>
+	    </select>
+
+	    <!-- Tipo de Borracha (só aparece se for revestimento) -->
+	    <div id="tipoBorrachaContainer" style="display: none;">
+	      <label for="tipoBorracha">Tipo de borracha:</label>
+	      <select id="tipoBorracha" name="tipoBorracha">
+	        <option value="">Selecione</option>
+	        <option value="Natural">Natural</option>
+	        <option value="Nitrilica">Nitrílica</option>
+	        <option value="Silicone">Silicone</option>
+	        <option value="Neoprene">Neoprene</option>
+	      </select>
+	    </div>
+
+	    <!-- Medidas -->
+	    <div class="medidas">
+	      <div>
+	        <label for="diametro">Diâmetro:</label>
+	        <input type="number" id="diametro" name="diametro" placeholder="20 mm">
+	      </div>
+	      <div>
+	        <label for="comprimento">Comprimento:</label>
+	        <input type="number" id="comprimento" name="comprimento" placeholder="150 mm">
+	      </div>
+	    </div>
+
+	    <!-- Quantidade -->
+	    <label for="quantidade">Quantidade:</label>
+	    <input type="number" id="quantidade" name="quantidade" placeholder="20">
+
+	    <!-- Upload -->
+	    <label for="desenho">Anexe algum desenho:</label>
+	    <div class="upload-box">
+	      <input type="file" id="desenho" name="desenho" hidden>
+	      <label for="desenho" class="upload-label">
+	        <span>Escolher arquivo</span>
+	      </label>
+	    </div>
+
+	    <!-- Valor estimado -->
+	    <p class="valor-estimado">Valor estimado</p>
+	    <p id="valor" class="valor">R$ 0,00</p>
+
+	    <!-- Botão de confirmação -->
+	    <a href="confirmacaoPedido.html">
+	      <button type="button" class="btn-confirmar">CONFIRMAR PEDIDO</button>
+	    </a>
+	  </form>
+    </div>
+  </div>
+
+  <!-- Importa o script separado -->
+  <script src="../script/scriptOrcamento.js"></script>
+</body>
+</html>

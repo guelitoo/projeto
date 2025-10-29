@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="../css/cadastro.css">
+  <link rel="icon" type="image/png" href="./img/Logo_Reobote.png" />
+</head>
+
+<header class="header">
+  <div class="container">
+    <!-- Logo -->
+    <div class="logo-section">
+      <a href="index.html"><img src="../img/Logo_Reobote.png" alt="Reobote" class="logo-img"></a>
+    </div>
+  </div>
+</header>
+
+<body>
+
+  <!-- Caixa de cadastro -->
+  <div class="form-container">
+    <h2>CADASTRE-SE</h2>
+    <form id="cadastroClienteForm">
+      <label for="nome">Nome Completo:<span class="required">*</span></label>
+      <input type="text" id="nome" placeholder="Digite seu nome completo" required>
+
+      <label for="email">Email:<span class="required">*</span></label>
+      <input type="email" id="email" placeholder="Digite seu email" required>
+
+      <label for="telefone">Telefone:<span class="required">*</span></label>
+      <input type="tel" id="telefone" placeholder="(xx) xxxxx-xxxx" required>
+
+      <label for="cpf">CPF/CNPJ:<span class="required">*</span></label>
+      <input type="text" id="cpf" placeholder="Digite seu CPF ou CNPJ" required>
+
+      <label for="senha">Senha:<span class="required">*</span></label>
+      <input type="password" id="senha" placeholder="Crie uma senha" required>
+
+      <button type="submit" class="btn-cadastro">CADASTRAR-SE</button>
+    </form>
+  </div>
+
+  <script src="../script/scriptCadastro.js"></script>
+
+</body>
+
+</html>

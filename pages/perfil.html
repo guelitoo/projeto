@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil - Reobote</title>
+  <link rel="stylesheet" href="../css/perfil.css">
+  <link rel="icon" type="image/png" href="../img/Logo_Reobote.png" />
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo-section">
+        <a href="./indexLogado.html"><img src="../img/Logo_Reobote.png" alt="Reobote" class="logo-img"></a>
+      </div>
+      <button id="logoutBtn" class="btn-logout">Logout</button>
+    </div>
+  </header>
+
+  <main class="profile-container">
+    <div class="profile-card">
+      <h2 class="profile-title">PERFIL</h2>
+
+      <form id="usuarioLogado" class="profile-form">
+        <label>Nome:</label>
+        <input id="nome" type="text" readonly>
+
+        <label>Email:</label>
+        <div class="input-wrapper">
+          <input id="email" type="email" readonly>
+          <span class="edit-icon" data-edit="email">✎</span>
+        </div>
+
+        <label>Telefone:</label>
+        <div class="input-wrapper">
+          <input id="telefone" type="text" readonly>
+          <span class="edit-icon" data-edit="telefone">✎</span>
+        </div>
+
+        <label>CPF/CNPJ:</label>
+        <input id="cpfCnpj" type="text" readonly>
+
+        <label>Senha:</label>
+        <div class="input-wrapper">
+          <input id="senha" type="password" readonly>
+          <span class="edit-icon" data-edit="senha">✎</span>
+        </div>
+
+        <a href="editarEndereco.html" id="editarEnderecoBtn" class="btn-editar-endereco">EDITAR ENDEREÇO</a>
+        <button type="submit" class="btn btn-primary">SALVAR ALTERAÇÕES</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="../script/scriptPerfil.js"></script>
+</body>
+
+</html>

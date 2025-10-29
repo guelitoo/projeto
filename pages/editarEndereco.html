@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Endereço</title>
+    <link rel="stylesheet" href="../css/editarEndereco.css">
+    <link rel="icon" type="image/png" href="../img/Logo_Reobote.png" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h2>EDITAR ENDEREÇO</h2>
+
+            <form action="#" method="post">
+                <label for="rua">Rua: <span class="obrigatorio">*</span></label>
+                <input type="text" id="rua" name="rua" placeholder="Digite o nome da rua" required>
+
+                <div class="linha-dupla">
+                    <div>
+                        <label for="bairro">Bairro: <span class="obrigatorio">*</span></label>
+                        <input type="text" id="bairro" name="bairro" placeholder="Digite o bairro" required>
+                    </div>
+                    <div>
+                        <label for="cep">CEP: <span class="obrigatorio">*</span></label>
+                        <input type="text" id="cep" name="cep" placeholder="00000-000" required>
+                    </div>
+                </div>
+
+                <div class="linha-dupla">
+                    <div>
+                        <label for="numero">Número: <span class="obrigatorio">*</span></label>
+                        <input type="text" id="numero" name="numero" placeholder="Número" required>
+                    </div>
+                    <div>
+                        <label for="cidade">Cidade: <span class="obrigatorio">*</span></label>
+                        <input type="text" id="cidade" name="cidade" placeholder="Digite a cidade" required>
+                    </div>
+                </div>
+
+                <label for="complemento">Complemento:</label>
+                <input type="text" id="complemento" name="complemento" placeholder="Apartamento, bloco, etc.">
+
+                <label for="estado">Estado: <span class="obrigatorio">*</span></label>
+                <select id="estado" name="estado" required>
+                    <option value="">Selecione o estado</option>
+                    <option value="SP">SP</option>
+                    <option value="RJ">RJ</option>
+                    <option value="MG">MG</option>
+                    <option value="RS">RS</option>
+                    <option value="BA">BA</option>
+                    <option value="PR">PR</option>
+                </select>
+
+                <label for="pais">País: <span class="obrigatorio">*</span></label>
+                <input type="text" id="pais" name="pais" placeholder="Digite o país" required>
+
+                <div class="botoes">
+                    <button type="submit" class="btn-salvar">SALVAR ENDEREÇO</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel do Funcionário - Reobote</title>
+  <link rel="stylesheet" href="../css/funcionario.css">
+  <link rel="icon" type="image/png" href="../img/Logo_Reobote.png" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo reobote">
+      <a href="indexFuncionario.html">
+        <img src="../img/Logo_Reobote.png" alt="Logo Reobote" class="logo">
+      </a>
+    </div>
+
+    <div class="user-icon">
+      <a href="perfil.html">
+        <img src="../img/perfil.png" alt="Usuário">
+      </a>
+    </div>
+  </header>
+
+
+  <main class="container">
+    <h1>ORÇAMENTOS</h1>
+
+    <table class="tabela">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>CLIENTE</th>
+          <th>QUANTIDADE</th>
+          <th>SERVIÇO</th>
+          <th>VALOR UNITÁRIO</th>
+          <th>TOTAL</th>
+          <th>PROCESSO</th>
+        </tr>
+      </thead>
+      <tbody id="tabela-corpo">
+        <!-- Os pedidos serão carregados aqui -->
+      </tbody>
+    </table>
+
+    <button class="confirmar-btn">CONFIRMAR PEDIDO</button>
+  </main>
+
+  <script src="../script/scriptFuncionario.js"></script>
+</body>
+
+</html>

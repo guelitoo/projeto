@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reobote</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/indexFuncionario.css" />
+  <link rel="icon" type="image/png" href="../img/Logo_Reobote.png" />
+
+  <style>
+    /* Header fixo */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background-color: #fff; /* mantenha a cor de fundo do header */
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* sombra opcional */
+    }
+
+    /* Espaço para não ficar atrás do header */
+    .carrossel,
+    .features,
+    .about,
+    .services,
+    .mvv,
+    .contact {
+      margin-top: 100px; /* ajuste de acordo com a altura do header */
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="#"><img src="../img/Logo_Reobote.png" alt="Logo Reobote"></a>
+      </div>
+
+      <nav class="nav-menu">
+        <a href="#quem-somos" class="nav-link">Quem somos</a>
+        <a href="#servicos" class="nav-link">Serviços</a>
+        <a href="#contato" class="nav-link">Contato</a>
+      </nav>
+
+      <div class="nav-buttons">
+        <a href="login.html" class="btn btn-login">Login</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="carrossel" aria-label="Banner principal">
+    <div class="slides-wrapper">
+      <div class="slide active">
+        <img src="../img/FotoRevestimento.webp" alt="Usinagem 1">
+        <div class="hero-content">
+          <h1>Excelência em Usinagem e Manutenção</h1>
+          <p>Precisão, qualidade e confiança em cada projeto.</p>
+          <a href="../pages/funcionario.html" class="btn btn-cta">Gerenciar Pedidos</a>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="../img/fotoRetifica.webp" alt="Usinagem 2">
+        <div class="hero-content">
+          <h1>Excelência em Usinagem e Manutenção</h1>
+          <p>Precisão, qualidade e confiança em cada projeto.</p>
+          <a href="../pages/funcionario.html" class="btn btn-cta">Gerenciar Pedidos</a>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="../img/fotoFundo.webp" alt="Usinagem 3">
+        <div class="hero-content">
+          <h1>Excelência em Usinagem e Manutenção</h1>
+          <p>Precisão, qualidade e confiança em cada projeto.</p>
+          <a href="../funcionario.html" class="btn btn-cta">Gerenciar Pedidos</a>
+        </div>
+      </div>
+    </div>
+
+    <button class="prev" aria-label="Anterior">❮</button>
+    <button class="next" aria-label="Próximo">❯</button>
+
+    <div class="dots" role="tablist">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+    </div>
+  </section>
+
+  <section class="features" id="contadores">
+    <div class="container features-inner">
+      <div class="counter-box">
+        <span class="counter" data-target="250">0</span>
+        <p>Clientes</p>
+      </div>
+
+      <div class="counter-box">
+        <span class="counter" data-target="98" data-is-percent="true">0</span>
+        <p>Satisfação</p>
+      </div>
+
+      <div class="counter-box">
+        <span class="counter" data-target="500" data-plus="true">0</span>
+        <p>Serviços prestados</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="quem-somos">
+    <div class="container">
+      <h2 class="section-title">Quem somos?</h2>
+      <div class="about-content">
+        <div class="about-card">
+          <p>
+            Somos especializados em Usinagem e Tornearia, Retífica e furação com fresa convencional.
+            Nosso atendimento é personalizado para cada projeto com o objetivo de proporcionar
+            resultados excelentes e o melhor desempenho operacional.
+            Oferecemos fabricação, assistência técnica, manutenção preventiva e corretiva em
+            máquinas flexográficas com peças de reposição à pronta entrega.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="servicos">
+    <div class="container">
+      <h2 class="section-title">Serviços</h2>
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-media">
+            <img src="../img/usinagem_de_cilindro.webp" alt="Corte a laser">
+          </div>
+          <div class="service-body">
+            <h4>Usinagem de Cilindro</h4>
+            <p>É um processo de fabricação que utiliza o desgaste mecânico para dar forma e acabamento a peças cilíndricas, sejam elas internas ou externas.</p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-media">
+            <img src="../img/retifica_cilindro_borracha.webp" alt="Dobra de Metais">
+          </div>
+          <div class="service-body">
+            <h4>Retifica de Borracha</h4>
+            <p>É um processo de usinagem e acabamento de rolos e cilindros emborrachados, corrigindo imperfeições, desgastes ou dimensões para restaurar suas propriedades e funcionalidade.</p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-media">
+            <img src="../img/revestimento_borracha.webp" alt="Corte de tubos">
+          </div>
+          <div class="service-body">
+            <h4>Revestimento de Borracha</h4>
+            <p>É um processo que consiste na aplicação de uma camada de borracha, natural ou sintética, sobre uma superfície, peça ou equipamento.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="service-media">
+    <img src="../img/usinagem.png" alt="Banner">
+  </div>
+
+  <section class="mvv">
+    <div class="container mvv-grid">
+      <div class="mvv-card">
+        <h4>Missão</h4>
+        <p>Oferecer soluções com excelência, atendendo às expectativas dos nossos clientes com produtos e serviços de alta qualidade.</p>
+      </div>
+
+      <div class="mvv-card">
+        <h4>Visão</h4>
+        <p>Ser referência no segmento metalúrgico, reconhecida pela qualidade e inovação nos serviços prestados.</p>
+      </div>
+
+      <div class="mvv-card">
+        <h4>Valores</h4>
+        <p>Transparência, ética e foco no desenvolvimento contínuo de produtos e processos.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contato">
+    <div class="container contact-inner">
+      <div class="contact-info">
+        <h2 class="contact-title">Contato</h2>
+        <p><strong>Endereço:</strong> R. João Benedetto Capitani, 124</p>
+        <p><strong>Telefone:</strong> (15) 98800-5903</p>
+        <p><strong>Email:</strong> vendas@reoboteusinagem.com.br</p>
+
+        <div class="contact-actions">
+          <a class="btn btn-outline" href="tel:+5515988005903">Ligar</a>
+          <a class="btn btn-login" href="https://wa.me/5515988005903" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="contact-map">
+        <iframe
+          src="https://www.google.com/maps?q=R.%20Jo%C3%A3o%20Benedetto%20Capitani%20124&output=embed"
+          width="100%" height="420" style="border:0; border-radius:18px;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Reobote</div>
+      <div>Desenvolvido por MKtech</div>
+    </div>
+  </footer>
+
+<script>
+document.getElementById('year').innerText = new Date().getFullYear();
+
+// CONTADORES - animação suave quando a seção entra na tela
+(function() {
+  const counters = document.querySelectorAll('.counter');
+  let started = false;
+
+  function animateCounters() {
+    counters.forEach(counter => {
+      const target = +counter.getAttribute('data-target');
+      const isPercent = counter.hasAttribute('data-is-percent');
+      const hasPlus = counter.hasAttribute('data-plus');
+      let current = 0;
+
+      function update() {
+        const step = target / 300; // controla a velocidade da contagem
+        current += step;
+        if (current >= target) {
+          if (isPercent) counter.innerText = target + '%';
+          else if (hasPlus) counter.innerText = '+' + target;
+          else counter.innerText = target;
+        } else {
+          if (isPercent) counter.innerText = Math.floor(current) + '%';
+          else if (hasPlus) counter.innerText = '+' + Math.floor(current);
+          else counter.innerText = Math.floor(current);
+          requestAnimationFrame(update);
+        }
+      }
+
+      requestAnimationFrame(update);
+    });
+  }
+
+  // OBSERVER para verificar quando a seção está visível
+  const section = document.getElementById('contadores');
+  if (section) {
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !started) {
+          started = true;
+          animateCounters();
+          observer.disconnect();
+        }
+      });
+    }, { threshold: 0.5 });
+
+    observer.observe(section);
+  }
+})();
+
+// CARROSSEL
+(function() {
+  const slides = document.querySelectorAll('.slide');
+  const dots = document.querySelectorAll('.dot');
+  const prev = document.querySelector('.prev');
+  const next = document.querySelector('.next');
+  let index = 0;
+  let autoplay = null;
+
+  const showSlide = (i) => {
+    slides.forEach(s => s.classList.remove('active'));
+    dots.forEach(d => d.classList.remove('active'));
+    slides[i].classList.add('active');
+    dots[i].classList.add('active');
+  };
+
+  const go = (dir) => {
+    index = (index + dir + slides.length) % slides.length;
+    showSlide(index);
+  };
+
+  prev.addEventListener('click', () => { go(-1); resetAutoplay(); });
+  next.addEventListener('click', () => { go(1); resetAutoplay(); });
+
+  dots.forEach(d => {
+    d.addEventListener('click', () => {
+      index = +d.dataset.index;
+      showSlide(index);
+      resetAutoplay();
+    });
+  });
+
+  function startAutoplay() {
+    autoplay = setInterval(() => { go(1); }, 5000);
+  }
+
+  function resetAutoplay() {
+    if(autoplay) clearInterval(autoplay);
+    startAutoplay();
+  }
+
+  showSlide(index);
+  startAutoplay();
+})();
+</script>
+</body>
+</html>
