@@ -1,0 +1,158 @@
+/* ============================= */
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* ============================= */
+/* Body */
+body {
+  background: linear-gradient(to bottom, #999, #e0e0e0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;       /* Tamanho da tela sem ultrapassar */
+  padding-top: 100px;      /* Espaço para o cabeçalho fixo */
+}
+
+/* ============================= */
+/* Formulário container */
+.form-container {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 10px 40px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+  max-width: 500px;
+  width: 150%;
+  height: 600px;
+  align-items: center;
+}
+
+/* Título */
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  color: #000;
+}
+
+/* Labels */
+.form-container label {
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.required {
+  color: red;
+}
+
+/* Inputs */
+.form-container input, .form-container select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 1rem;
+  background-color: #f5f5f5;
+}
+
+.form-container input:focus, .form-container select:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+/* Linha dupla de campos */
+.double-field {
+  display: flex;
+  gap: 10px;
+}
+
+.double-field input, .double-field select {
+  flex: 1;
+}
+
+/* Botão */
+.btn-cadastro {
+  width: 100%;
+  padding: 12px 0;
+  background-color: #52cc74; /* verde do protótipo */
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-cadastro:hover {
+  background-color: #52cc74;
+}
+
+/* Responsividade */
+@media (max-width: 500px) {
+  .form-container {
+    padding: 20px;
+  }
+  .double-field {
+    flex-direction: column;
+  }
+}
+
+/* ============================= */
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 100px;
+  background: white;
+  padding: 5px 10px;
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Logo */
+.logo-img {
+  height: 90px; /* Ajuste o tamanho da logo conforme necessário */
+  width: auto;
+  align-items: center;
+}
+
+/* Logo */
+.header .logo img {
+  width: 30px; /* Ajuste o tamanho da logo conforme necessário */
+  cursor: pointer;
+}
+
+/* Ícone de perfil */
+.profile-icon img {
+  width: 40px; /* Tamanho do ícone de perfil */
+  height: 40px;
+  border-radius: 50%; /* Torna o ícone circular */
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.profile-icon img:hover {
+  opacity: 0.8; /* Efeito de hover */
+}
