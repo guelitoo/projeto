@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #d9d9d9, #f7f7f7);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 20px;
+  background: white;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo {
+  width: 100px;
+}
+
+.user-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.container {
+  margin: auto;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+  padding: 30px;
+  width: 85%;
+  max-width: 900px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 25px;
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 25px;
+}
+
+.tabela th, .tabela td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.tabela th {
+  background-color: #f0f0f0;
+}
+
+.status-select {
+  padding: 6px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.status-select option[value="pendente"] {
+  color: #d17b00;
+}
+.status-select option[value="andamento"] {
+  color: #1e90ff;
+}
+.status-select option[value="concluido"] {
+  color: #28a745;
+}
+
+.confirmar-btn {
+  background-color: #52cc74;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.confirmar-btn:hover {
+  background-color: #52cc74;
+}

@@ -1,0 +1,246 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+  background: #fff;
+  padding: 12px 24px;
+  border-bottom: 1px solid #ddd;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  text-decoration: none;
+  text-decoration: #00000000;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #7cb34200;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #52cc74;
+}
+
+.user-circle {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+/* Fundo */
+body {
+  background: linear-gradient(to bottom, #dcdcdc, #a9a9a9);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container do Perfil */
+.profile-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.profile-card {
+  background: #fff;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.profile-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.profile-icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+/* Formulário */
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #f4f4f4;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper .edit-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  cursor: pointer;
+  color: #555;
+}
+
+/* Botões */
+.btn {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-primary {
+  background: #52cc74;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #52cc74;
+}
+
+.btn-secondary {
+  background: #52cc74;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background: #52cc74;
+}
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: white;
+  padding: 12px 24px;
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Logo */
+.logo-img {
+  height: 80px; /* Ajuste o tamanho da logo conforme necessário */
+  width: auto;
+}
+/* ===== Ajuste fino para o cabeçalho fixo ===== */
+.profile-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 20px 40px; /* Adiciona espaço apenas no topo */
+}
+
+.btn-editar-endereco {
+  display: block;
+  width: 100%;
+  background: #52cc74;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn-editar-endereco:hover {
+  background: #47b668;
+}
+
+.btn-editar-endereco:hover {
+    background-color: #47b668;
+}
+
+.btn-logout {
+  background-color: #ff4b5c; 
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-logout:hover {
+  background-color: #ff2a3a; 
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-logout:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
